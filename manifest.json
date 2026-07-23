@@ -1,0 +1,33 @@
+{
+  "id": "war_thunder",
+  "name": "战争雷霆",
+  "version": "1.1.1",
+  "sdk": "1",
+  "author": "栖安",
+  "description": "面向《战争雷霆》的 Yokonex GameHub 联动插件，通过游戏本机 8111 遥测接口采集空战过载、击杀、死亡、陆战速度、维修与空中支援事件，并交给本机 GameHub 触发役次元 IM 与蓝牙设备反馈。",
+  "entry": "WarThunder-Yokonex-Plugin.exe",
+  "yokonex": {
+    "source": "war_thunder",
+    "displayName": "战争雷霆",
+    "adapter": "localhost:8111 + External WebSocket SDK",
+    "tutorial": "USAGE.md",
+    "events": [
+      { "name": "进入战斗时停止", "eventKey": "war_thunder.battle_start", "commandId": "_stop_all" },
+      { "name": "离开战斗时停止", "eventKey": "war_thunder.battle_end", "commandId": "_stop_all" },
+      { "name": "空战中等过载", "eventKey": "war_thunder.aircraft_g_medium", "commandId": "wt_air_g_medium" },
+      { "name": "空战高过载", "eventKey": "war_thunder.aircraft_g_high", "commandId": "wt_air_g_high" },
+      { "name": "空战极限过载", "eventKey": "war_thunder.aircraft_g_extreme", "commandId": "wt_air_g_extreme" },
+      { "name": "空战击杀", "eventKey": "war_thunder.aircraft_kill", "commandId": "wt_air_kill" },
+      { "name": "空战死亡或坠毁", "eventKey": "war_thunder.aircraft_death", "commandId": "wt_air_death" },
+      { "name": "陆战低速行驶", "eventKey": "war_thunder.tank_speed_low", "commandId": "wt_tank_speed_low" },
+      { "name": "陆战中速行驶", "eventKey": "war_thunder.tank_speed_medium", "commandId": "wt_tank_speed_medium" },
+      { "name": "陆战高速行驶", "eventKey": "war_thunder.tank_speed_high", "commandId": "wt_tank_speed_high" },
+      { "name": "陆战击杀", "eventKey": "war_thunder.tank_kill", "commandId": "wt_tank_kill" },
+      { "name": "陆战死亡或被摧毁", "eventKey": "war_thunder.tank_death", "commandId": "wt_tank_death" },
+      { "name": "开始维修", "eventKey": "war_thunder.tank_repair_start", "commandId": "wt_tank_repair_start" },
+      { "name": "维修完成", "eventKey": "war_thunder.tank_repair_end", "commandId": "wt_tank_repair_end" },
+      { "name": "进入陆战空中支援", "eventKey": "war_thunder.cas_enter", "commandId": "wt_cas_enter" },
+      { "name": "离开陆战空中支援", "eventKey": "war_thunder.cas_exit", "commandId": "wt_cas_exit" }
+    ]
+  }
+}
