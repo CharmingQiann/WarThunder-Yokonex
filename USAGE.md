@@ -10,12 +10,12 @@
 ## 环境要求
 
 - Windows 10/11。
-- Yokonex GameHub 已启动。
+- 已从 [Yokonex GameHub 官网](https://game-hub.ycygame.net/) 下载并安装最新版 GameHub。
 - 战争雷霆需要处于机库或战斗中，程序读取 `127.0.0.1:8111`。
 
 ## 安装
 
-1. 启动最新版 Yokonex GameHub。
+1. 从 [Yokonex GameHub 官网](https://game-hub.ycygame.net/) 下载、安装并启动最新版 GameHub。
 2. 打开“插件中心 → 线上市场”。
 3. 找到“战争雷霆”，点击安装。
 4. 安装完成后，GameHub 会自动启动联动插件。

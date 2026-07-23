@@ -42,7 +42,9 @@ GameHub /v1/events        GameHub /ws/plugin
 
 ## 安装
 
-普通用户请从 [GitHub Releases](https://github.com/CharmingQiann/WarThunder-Yokonex/releases) 下载 ZIP，完整步骤见 [USAGE.md](USAGE.md)。
+1. 从 [Yokonex GameHub 官网](https://game-hub.ycygame.net/) 下载并安装最新版 GameHub。
+2. 从 [GitHub Releases](https://github.com/CharmingQiann/WarThunder-Yokonex/releases) 下载插件 ZIP。
+3. 按照 [USAGE.md](USAGE.md) 完成导入和配置。
 
 ## 项目结构
 
@@ -89,7 +91,7 @@ artifacts\WarThunder-Yokonex-Plugin-v1.1.1.zip
 
 ## 相关项目
 
-- [Yokonex GameHub](https://github.com/tzwgoo/Yokonex-GameHub)
+- [Yokonex GameHub 官网](https://game-hub.ycygame.net/)
 - [YOKONEX OpenSource](https://github.com/YCY-YOKONEX/YCY-YOKONEX-OpenSource)
 - [War Thunder localhost API documentation](https://github.com/lucasvmx/WarThunder-localhost-documentation)
 
