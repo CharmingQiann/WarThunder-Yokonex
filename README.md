@@ -86,7 +86,7 @@ python -m unittest discover -s tests -v
 发布包生成到：
 
 ```text
-artifacts\WarThunder-Yokonex-Plugin-v1.1.1.zip
+artifacts\WarThunder-Yokonex-Plugin-v1.1.2.zip
 ```
 
 ## 相关项目

@@ -1,7 +1,7 @@
 {
   "id": "war_thunder",
   "name": "战争雷霆",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "sdk": "1",
   "author": "栖安",
   "description": "面向《战争雷霆》的 Yokonex GameHub 联动插件，通过游戏本机 8111 遥测接口采集空战过载、击杀、死亡、陆战速度、维修与空中支援事件，并交给本机 GameHub 触发役次元 IM 与蓝牙设备反馈。",

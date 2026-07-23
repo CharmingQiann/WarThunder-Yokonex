@@ -28,7 +28,7 @@ class ManifestTests(unittest.TestCase):
         self.assertEqual(len(keys), len(manifest["yokonex"]["events"]))
         self.assertEqual(manifest["entry"], "WarThunder-Yokonex-Plugin.exe")
         self.assertEqual(manifest["author"], "栖安")
-        self.assertEqual(manifest["version"], "1.1.1")
+        self.assertEqual(manifest["version"], "1.1.2")
         commands = {event["eventKey"]: event["commandId"] for event in manifest["yokonex"]["events"]}
         self.assertEqual(commands["war_thunder.battle_start"], "_stop_all")
         self.assertEqual(commands["war_thunder.battle_end"], "_stop_all")

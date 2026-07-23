@@ -3,8 +3,8 @@ $ErrorActionPreference = "Stop"
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Venv = Join-Path $Root ".venv"
 $ArtifactsRoot = Join-Path $Root "artifacts"
-$PackageDir = Join-Path $ArtifactsRoot "WarThunder-Yokonex-Plugin-v1.1.1"
-$ZipPath = Join-Path $ArtifactsRoot "WarThunder-Yokonex-Plugin-v1.1.1.zip"
+$PackageDir = Join-Path $ArtifactsRoot "WarThunder-Yokonex-Plugin-v1.1.2"
+$ZipPath = Join-Path $ArtifactsRoot "WarThunder-Yokonex-Plugin-v1.1.2.zip"
 $ExeName = "WarThunder-Yokonex-Plugin.exe"
 
 function Assert-WorkspaceChild([string]$Path) {

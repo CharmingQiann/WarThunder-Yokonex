@@ -24,6 +24,7 @@ CONTINUOUS_OUTPUT_INTERVAL_MS = 150
 
 def main() -> None:
     root = runtime_root()
+    _force_utf8_output()
     _configure_logging(root)
     logger = logging.getLogger("war_thunder")
     instance = SingleInstance("Local\\WarThunder-Yokonex-Plugin")
@@ -121,3 +122,10 @@ def _configure_logging(root) -> None:
         console_handler.setFormatter(formatter)
         handlers.append(console_handler)
     logging.basicConfig(level=logging.INFO, handlers=handlers)
+
+
+def _force_utf8_output() -> None:
+    """GameHub 按 UTF-8 读取插件管道，统一编码可避免 Windows GBK 中文乱码。"""
+    for stream in (sys.stdout, sys.stderr):
+        if stream is not None and hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
